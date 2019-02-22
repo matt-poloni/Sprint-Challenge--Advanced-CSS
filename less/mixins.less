@@ -1,1 +1,21 @@
 // Mixins Here
+.flex(@jc: center, @ai: center, @dir: row) {
+  display: flex;
+  justify-content: @jc;
+  align-items: @ai;
+  flex-direction: @dir;
+}
+
+.btn-custom(@pad-tb, @pad-lr) {
+  font-size: 2rem;
+  color: white;
+  background: @btn-bg-color;
+  border-radius: 5px;
+  padding: @pad-tb @pad-lr;
+  curosor: pointer;
+
+  &:hover {
+    color: @btn-bg-color;
+    background: white;
+  }
+}
